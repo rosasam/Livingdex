@@ -7,5 +7,7 @@ from django.conf import settings
 from livingdex_app.models import *
 
 def index(request):
-    #return HttpResponse("Hello, world. You're at the livingdex start page.")
-    return render(request, 'base.html')
+    return HttpResponse("Hello, world. You're at the livingdex start page.")
+
+def livingdex(request):
+    return render(request, 'grid.html')
