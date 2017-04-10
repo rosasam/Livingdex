@@ -1,3 +1,32 @@
+body {
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  color: #fff;
+  background-color: #212121;
+  border-bottom: 2px solid #f00;
+  border-radius: 0px;
+  z-index: 1;
+}
+
+.main {
+  margin: auto;
+  height: 100%;
+  background-color: #fff;
+  position:absolute;
+  top:100px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  border: 2px solid #d9dedf;
+  overflow:hidden;
+  z-index: -10;
+}
+
 .icon {
   width: 78px;
   height: 78px;
@@ -47,17 +76,65 @@ p {
   position: absolute;
   top: 7px;
   left: 7px;
-  z-index:-1;
+  z-index: -1;
   display: block;
   margin: auto;
   padding: 0px;
   opacity: 1;
 }
-.container {
-  width: 190px;
-  height: 152px;
-  border-radius: 7px;
-  border: 1px solid black;
+.pc-box-container {
+  position: relative;
+  left: 50%;
+  margin-left: -126px;
+  width: 252px;
+}
+.pc-box {
+  position: absolute;
+  top: 15px;
+  width: 252px;
+  height: 212px;
+  padding: 5px;
+  /* Fallback color */
+  background: #eefeff;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(#eefeff,white,white,#eefeff);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(#eefeff,white,white,#eefeff);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(#eefeff,white,white,#eefeff);
+  /* Standard syntax */
+  background: linear-gradient(#eefeff,white,white,#eefeff);
+  border-radius: 10px;
+  border: 1px solid #97a9af;
+}
+.pc-box-name {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  /* Fallback color */
+  background: #eefeff;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(#eefeff,white,white,#eefeff);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(#eefeff,white,white,#eefeff);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(#eefeff,white,white,#eefeff);
+  /* Standard syntax */
+  background: linear-gradient(white,white,#d9ecec);
+  border-radius: 15px;
+  border: 1px solid #97a9af;
+  z-index: 1;
+}
+
+.owned {
+  opacity: 1;
+}
+.not-owned {
+  opacity: 0.3;
 }
 /* debug
 img {

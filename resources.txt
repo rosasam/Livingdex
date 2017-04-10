@@ -1,0 +1,5 @@
+SASS to django
+http://www.bigjason.com/blog/using-sass-django
+
+Django-ReactJS boilerplate
+https://github.com/mbrochh/django-reactjs-boilerplate

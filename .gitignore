@@ -1,3 +1,7 @@
 *.pyc
 .DS_Store
 db.sqlite3
+livingdex_app/static/bundles/local/
+node_modules/
+webpack-stats-local.json
+webpack.local-settings.js
